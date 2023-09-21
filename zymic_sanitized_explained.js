@@ -26,7 +26,7 @@ for(x of r)
 	a=x[C](m=c=0)-124;
 	
 	//Skip characters that can't occur in a template literal
-	for(z of `#[_`)
+	for(z of `#[_`) //note: there's an unprintable character in this string, you may not see it in the GitHub viewer.
 		a-=x>z;
 	
 	//Convert our character to one or two numeric values. Append to e
